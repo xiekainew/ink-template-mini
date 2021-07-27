@@ -1,0 +1,28 @@
+{
+    "name": "{{name}}",
+    "version": "0.1.0",
+    "description": "{{description}}",
+    "author": "{{{author}}}",
+    "dependencies": {
+        {{#if deps.habo}}
+            "habo-mp-sdk": "^0.0.16",
+        {{/if}}
+        {{#if deps.vant}}
+            "@vant/weapp": "^1.6.1",
+        {{/if}}
+        {{#if deps.dayjs}}
+            "dayjs": "^1.9.6",
+        {{/if}}
+        {{#if deps.dialog}}
+            "@spark/dialog-model": "^1.0.2",
+        {{/if}}
+        {{#if deps.sparkweapp}}
+            "@spark/weapp": "^1.0.3"
+        {{/if}}
+    },
+    "scripts": {
+        "clean": "rimraf lib dist es coverage",
+        "lint": "mew src test --rule",
+        "pretest": "yarn lint"
+    }
+}

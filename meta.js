@@ -37,6 +37,10 @@ module.exports = {
                 {
                     name: '百家弹框组件',
                     value: 'dialog'
+                },
+                {
+                    name: '星火weapp',
+                    value: 'sparkweapp'
                 }
 			]
 		}
